@@ -4,7 +4,7 @@ namespace InsecureProject.Database;
 
 public class DbModelContext : DbContext
 {
-    public DbSet<Forecast> Forecasts { get; set; }
+    public virtual DbSet<Forecast> Forecasts { get; set; }
 
     public string DbPath { get; }
 
